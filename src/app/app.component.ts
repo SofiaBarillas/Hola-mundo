@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'holamundo';
+  title = 'Hola mundo';
+  contador= 0;
+  constructor (){}
+  onkey (event:any){
+    this.contador=event.target.value.length
+  }
 }
